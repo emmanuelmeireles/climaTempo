@@ -6,7 +6,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
         .then(response => response.json())
         .then(data => {
             document.getElementById('endereco').textContent = data.logradouro + ', ' + data.localidade + ' - ' + data.uf;
-            return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${data.localidade}&appid=SUA_API_KEY`);
+            return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${data.localidade}&appid=29036b8ae142eb39940f327abc474619`);
         })
         .then(response => response.json())
         .then(data => {
